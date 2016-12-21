@@ -12,7 +12,7 @@
 
     <!-- Styles -->
     <link rel="stylesheet" type="text/css" href="{{ asset('css/bootstrap/bootstrap.css') }}">
-
+    @yield('styles')
     <!-- Scripts -->
     <script>
         window.Laravel = <?php echo json_encode([
@@ -32,5 +32,6 @@
     <script type="text/javascript" src="{{ asset('js/jquery-2.2.2.min.js') }}"></script>
     <script type="text/javascript" src="{{ asset('js/bootstrap/tether.min.js') }}"></script>
     <script type="text/javascript" src="{{ asset('js/bootstrap/bootstrap.min.js') }}"></script>
+    @yield("scripts")
 </body>
 </html>
