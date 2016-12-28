@@ -6,7 +6,7 @@
 @section('content')
     Ändra
 
-    {{Form::open(array('url'=> '/update','files'=>true, 'id'=>'form1'))}}
+    {{Form::open(array('url'=> App::getLocale().'/update','files'=>true, 'id'=>'form1'))}}
 
     <p>
         {{Form::label('content', 'Innehåll', array('class' => 'required'))}} <br/>
@@ -31,8 +31,10 @@
     </script>
 
     <script>
-
+		<!--$("img").removeClass('img-responsive');-->
         $("#save").click(function () {
+			$("img").css('height','auto');
+			$("img").addClass('img-responsive');
             $("#content").val($('#col').summernote('code'));
             $("#form1").submit();
         });

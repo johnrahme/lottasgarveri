@@ -10,14 +10,21 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-
-Route::get('/', 'WelcomeController@index');
-Route::get('/edit', 'WelcomeController@edit');
-Route::post('/update', 'WelcomeController@update');
-Route::post('/imgStore', 'WelcomeController@imgStore');
-
 Auth::routes();
 
 Route::get('/home', 'HomeController@index');
 
-Route::get('/en', 'HomeController@index');
+
+Route::get('/', function(){return redirect('/se');});
+Route::get('/{lang}', 'WelcomeController@index')->name('welcome');
+//Route::get('/{lang}', 'WelcomeController@indexEn');
+Route::get('/{lang}/edit', 'WelcomeController@edit')->name('welcome.edit')->middleware('auth');
+Route::post('/{lang}/update', 'WelcomeController@update')->middleware('auth');
+Route::post('/imgStore', 'WelcomeController@imgStore')->middleware('auth');
+
+
+Route::get('/{lang}/tannery', function () {
+    return 'Hello World';
+});
+
+
