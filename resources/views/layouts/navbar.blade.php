@@ -10,17 +10,28 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#">Lottas Garveri</a>
+            <a class="navbar-brand" href="#">Lottas garveri</a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
-            <ul class="nav navbar-nav">
-                <li id = "welcome"><a href="{{App::getLocale()}}">@lang('messages.welcome')</a></li>
-                <li id = "tannery"><a href="{{App::getLocale()}}/tannery">@lang('messages.tannery')</a></li>
-                @if(App::isLocale('se'))
-                    <li>{{ Html::linkRoute(Route::currentRouteName(), 'English', 'en') }}</li>
+            <ul class="nav navbar-nav navbar-left">
+                <li id = "welcome"><a href="{{route('welcome',App::getLocale())}}">@lang('menu.welcome')</a></li>
+                <li id = "shop"><a href="{{route('shop',App::getLocale())}}">@lang('menu.shop')</a></li>
+                <li id = "tannery"><a href="{{route('tannery',App::getLocale())}}">@lang('menu.tannery')</a></li>
+                <li id = "courses"><a href="{{route('courses',App::getLocale())}}">@lang('menu.coursesLectures')</a></li>
+                <li id = "exhibitions"><a href="{{route('exhibitions',App::getLocale())}}">@lang('menu.exhibitions')</a>
+
+                </li>
+                <li id = "books"><a href="{{route('books',App::getLocale())}}">@lang('menu.books')</a></li>
+
+
+            @if(App::isLocale('se'))
+                    <li><a style = "padding-bottom:0px; " href = "{{route(Route::currentRouteName(),'en')}}"><img class = "" style="height: auto; width: 23px;" src = "{{asset('/img/english.png')}}"></a></li>
+                    {{--<li>{{ Html::linkRoute(Route::currentRouteName(), '<img class = "" style="height: auto; width: 23px;" src = "img/english.png">', 'en') }}</li>--}}
                 @elseif(App::isLocale('en'))
-                    <li>{{ Html::linkRoute(Route::currentRouteName(), 'Svenska', 'se') }}</li>
+                    <li><a style = "padding-bottom:0px; " href = "{{route(Route::currentRouteName(),'se')}}"><img class = "" style="height: auto; width: 23px;" src = "{{asset('img/swedish.png')}}"></a></li>
+{{--                    <li>{{ Html::linkRoute(Route::currentRouteName(), 'Svenska', 'se') }}</li>--}}
                 @endif
+
             </ul>
         </div><!--/.nav-collapse -->
 

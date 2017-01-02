@@ -52,19 +52,34 @@ return [
             'prefix' => '',
         ],
 
+//        'mysql' => [
+//            'driver' => 'mysql',
+//            'host' => 'mysql525.loopia.se',
+//            'port' => '',
+//            'database' => 'lottasgarveri_se',
+//            'username' => 'admin@l161277',
+//            'password' => '230192Mimmi!',
+//            'charset' => 'utf8',
+//            'collation' => 'utf8_unicode_ci',
+//            'prefix' => '',
+//            'strict' => true,
+//            'engine' => null,
+//        ]
+//
         'mysql' => [
             'driver' => 'mysql',
-            'host' => 'mysql525.loopia.se',
+            'host' => 'localhost',
             'port' => '',
-            'database' => 'lottasgarveri_se',
-            'username' => 'admin@l161277',
-            'password' => '230192Mimmi!',
+            'database' => 'lotta',
+            'username' => 'root',
+            'password' => '',
             'charset' => 'utf8',
             'collation' => 'utf8_unicode_ci',
             'prefix' => '',
             'strict' => true,
             'engine' => null,
-        ],
+        ]
+        ,
 
         'pgsql' => [
             'driver' => 'pgsql',
