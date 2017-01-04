@@ -22,6 +22,12 @@
         <br>
         Online:
         {{$course->online}}
+
+
+            {{Form::open(array('url'=> route('course.delete',$course->id),'method'=>'delete', 'files'=>true))}}
+            {{Form::submit('Delete',['class'=>'btn btn-danger'])}}
+            {{Form::close()}}
+
     @endforeach
 
     <br>

@@ -114,6 +114,6 @@ class CourseController extends Controller
     {
         $course = Course::find($id);
         $course->delete();
-        return view('course.edit', ['course'=> $course,'active' => 'courses']);
+        return redirect('/se/courses');
     }
 }
