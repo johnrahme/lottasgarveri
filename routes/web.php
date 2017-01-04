@@ -56,6 +56,16 @@ Route::get('/{lang}/books/edit', 'BooksController@edit')->name('books.edit')->mi
 Route::post('/{lang}/books/update', 'BooksController@update')->name('books.update')->middleware('auth');
 
 
+//Course
+
+Route::get('/se/course/create', 'CourseController@create')->name('course.create');
+Route::post('/se/course/store', 'CourseController@store')->name('course.store');
+Route::post('/se/course/update', 'CourseController@update')->name('course.update');
+Route::get('/se/course/{id}/edit', 'CourseController@edit')->name('course.edit');
+
+
+
+
 
 
 

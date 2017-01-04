@@ -16,10 +16,14 @@ class CreateCoursesTable extends Migration
         Schema::create('courses', function (Blueprint $table) {
             $table->increments('id');
             $table->longText('content');
+            $table->longText('en_content');
             $table->string('name');
+            $table->string('en_name');
             $table->string('location');
-            $table->dateTime('start_time');
-            $table->dateTime('end_time');
+            $table->string('start_time');
+            $table->string('end_time');
+            $table->string('pdf_url');
+            $table->boolean('online');
             $table->timestamps();
         });
     }
