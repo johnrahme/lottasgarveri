@@ -1,8 +1,12 @@
 @extends('layouts.default')
 @section('content')
-    {{--    @include('drafts.shop')--}}
-    {!! $page['content'] !!}
 
-    {{ Html::linkRoute('shop.edit', 'Ändra innehåll', App::getLocale(),array('class' => 'btn btn-primary')) }}
+    <div class="container clear-top" >
+        @include('drafts.shop')
+        {!! $page['content'] !!}
+
+        {{ Html::linkRoute('shop.edit', 'Ändra innehåll', App::getLocale(),array('class' => 'btn btn-primary')) }}
+
+    </div>
 
 @endsection

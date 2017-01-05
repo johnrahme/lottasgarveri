@@ -103,9 +103,6 @@ class CourseController extends Controller
             $URL = url('/') . "/" . $folder . "/" . $saveName;
             $course->pdf_url = $URL;
         }
-        else{
-            $course->pdf_url = 'not set';
-        }
         $course->save();
 
         return redirect('/se');
