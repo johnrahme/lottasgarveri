@@ -42,6 +42,11 @@ Route::get('/{lang}/exhibitions', 'ExhibitionsController@index')->name('exhibiti
 Route::get('/{lang}/exhibitions/edit', 'ExhibitionsController@edit')->name('exhibitions.edit')->middleware('auth');
 Route::post('/{lang}/exhibitions/update', 'ExhibitionsController@update')->name('exhibitions.update')->middleware('auth');
 
+Route::get('/{lang}/list', 'ListController@index')->name('list');
+Route::get('/{lang}/list/edit', 'ListController@edit')->name('list.edit')->middleware('auth');
+Route::post('/{lang}/list/update', 'ListController@update')->name('list.update')->middleware('auth');
+
+
 //Courses
 Route::get('/{lang}/courses', 'CoursesController@index')->name('courses');
 //Route::get('/{lang}', 'WelcomeController@indexEn');

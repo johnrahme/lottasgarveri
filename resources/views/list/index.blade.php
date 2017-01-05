@@ -5,6 +5,6 @@
         @include('drafts.exhibList')
         {!! $page['content'] !!}
 
-        {{ Html::linkRoute('exhibitions.edit', 'Ändra innehåll', App::getLocale(),array('class' => 'btn btn-primary')) }}
+        {{ Html::linkRoute('list.edit', 'Ändra innehåll', App::getLocale(),array('class' => 'btn btn-primary')) }}
     </div>
 @endsection

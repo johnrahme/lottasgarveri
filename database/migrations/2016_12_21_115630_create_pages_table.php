@@ -104,6 +104,21 @@ class CreatePagesTable extends Migration
             'created_at' => date('Y-m-d H:m:s'),
             'updated_at' => date('Y-m-d H:m:s')
         ));
+        DB::table('pages')->insert(array(
+            'content' => '<h1>List har inget innehåll</h1>',
+            'name' => 'List',
+            'lang' => 'se',
+            'created_at' => date('Y-m-d H:m:s'),
+            'updated_at' => date('Y-m-d H:m:s')
+        ));
+        DB::table('pages')->insert(array(
+            'content' => '<h1>List does not have any content</h1>',
+            'name' => 'List',
+            'lang' => 'en',
+            'created_at' => date('Y-m-d H:m:s'),
+            'updated_at' => date('Y-m-d H:m:s')
+        ));
+
     }
 
     /**
