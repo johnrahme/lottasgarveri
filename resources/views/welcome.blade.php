@@ -1,4 +1,4 @@
-@extends('layouts.default')
+@extends('layouts.default_home')
 @section('content')
     {{--@include('layouts.carousel')--}}
     @include('layouts.carousel')

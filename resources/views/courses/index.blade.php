@@ -3,7 +3,7 @@
     {{--    @include('drafts.shop')--}}
 
 
-    <div class="container clear-top" >
+
 {{--    @include('drafts.courses')--}}
     {!! $page['content'] !!}
     @if(Auth::check())
@@ -57,5 +57,5 @@
         @endforeach
 
         <br>
-    </div>
+
 @endsection

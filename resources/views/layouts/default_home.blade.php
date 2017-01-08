@@ -12,8 +12,8 @@
 
     <!-- Styles -->
     <link rel="stylesheet" type="text/css" href="{{ asset('css/bootstrap/bootstrap.css') }}">
-    @yield('styles')
-    <!-- Scripts -->
+@yield('styles')
+<!-- Scripts -->
     <script>
         window.Laravel = <?php echo json_encode([
                 'csrfToken' => csrf_token(),
@@ -21,32 +21,30 @@
     </script>
 </head>
 {{--Add padding for dynamic navbar--}}
-<body id = "body" style="padding-top:70px;" background="{{asset('/img/background.jpg')}}">
+<body id = "body" style="padding-top:50px;">
 
 @include('layouts.navbar')
-<div class="container clear-top" style = "box-shadow: 0px 0px 5px 2px #888888; background-color: #fff; padding: 18px">
-    @yield('content')
-</div>
+@yield('content')
 {{--<div class="container clear-top" style="box-shadow: 0px 0px 5px 2px #888888; background-color: #fff; padding: 18px">--}}
-    {{--@yield('content')--}}
+{{--@yield('content')--}}
 {{--</div>--}}
 @include('layouts.footer');
 
 <!-- Scripts -->
-    <script type="text/javascript" src="{{ asset('js/jquery-2.2.2.min.js') }}"></script>
-    <script type="text/javascript" src="{{ asset('js/bootstrap/tether.min.js') }}"></script>
-    <script type="text/javascript" src="{{ asset('js/bootstrap/bootstrap.min.js') }}"></script>
-    {{--Set the correct active--}}
-    <script>
+<script type="text/javascript" src="{{ asset('js/jquery-2.2.2.min.js') }}"></script>
+<script type="text/javascript" src="{{ asset('js/bootstrap/tether.min.js') }}"></script>
+<script type="text/javascript" src="{{ asset('js/bootstrap/bootstrap.min.js') }}"></script>
+{{--Set the correct active--}}
+<script>
 
-        @if(isset($active))
+            @if(isset($active))
 
-        var active = '#{{$active}}';
-        $("#{{$active}}").addClass("active");
+    var active = '#{{$active}}';
+    $("#{{$active}}").addClass("active");
 
 
-        @endif
-    </script>
-    @yield("scripts")
+    @endif
+</script>
+@yield("scripts")
 </body>
 </html>
