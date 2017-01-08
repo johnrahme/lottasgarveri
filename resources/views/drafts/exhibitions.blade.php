@@ -24,4 +24,3 @@
             nöthud.</p>
     </div>
 </div>
-<a href="{{route('list','se')}}" class = "btn btn-default"> Visa tidigare utsällningar och utmärkelser </a>

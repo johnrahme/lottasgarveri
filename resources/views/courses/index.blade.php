@@ -4,11 +4,11 @@
 
 
     <div class="container clear-top" >
-    @include('drafts.courses')
+{{--    @include('drafts.courses')--}}
     {!! $page['content'] !!}
-
-    {{ Html::linkRoute('courses.edit', 'Ändra innehåll', App::getLocale(),array('class' => 'btn btn-primary')) }}
-
+    @if(Auth::check())
+        {{ Html::linkRoute('courses.edit', 'Ändra innehåll', App::getLocale(),array('class' => 'btn btn-primary')) }}
+    @endif
         @foreach($courses as $course)
             <div class="panel panel-default">
                 <div class="panel-body" style="padding-top: 0">

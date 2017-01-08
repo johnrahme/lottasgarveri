@@ -4,9 +4,9 @@
     @include('layouts.carousel')
 {{--    @include('drafts.welcome')--}}
     {!! $page['content'] !!}
-
-    {{ Html::linkRoute('welcome.edit', 'Ändra innehåll', App::getLocale(),array('class' => 'btn btn-primary')) }}
-
+    @if(Auth::check())
+        {{ Html::linkRoute('welcome.edit', 'Ändra innehåll', App::getLocale(),array('class' => 'btn btn-primary')) }}
+    @endif
 @endsection
 @section('scripts')
     <script>

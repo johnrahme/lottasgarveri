@@ -26,15 +26,17 @@ Jag kan ta emot sällskap på upp till 15 personer för demonstration samt före
         </div>
     </div>
     <div class = "col-md-6">
-        <div class = "col-xs-6">
-            <img align="center" class = "img-responsive" src = "{{asset('/img/Shop/svart_vast.jpg')}}">
-            <p align="center">Väska i lake skinn och
-                nöthud.</p>
-        </div>
-        <div class = "col-xs-6">
-            <img align="center" class = "img-responsive" src = "{{asset('/img/Shop/Vaska_i_nothud.jpg')}}">
-            <p align="center">Väska i lake skinn och
-                nöthud.</p>
+        <div class = "row">
+            <div class = "col-xs-6">
+                <img align="center" class = "img-responsive" src = "{{asset('/img/Shop/svart_vast.jpg')}}">
+                <p align="center">Väska i lake skinn och
+                    nöthud.</p>
+            </div>
+            <div class = "col-xs-6">
+                <img align="center" class = "img-responsive" src = "{{asset('/img/Shop/Vaska_i_nothud.jpg')}}">
+                <p align="center">Väska i lake skinn och
+                    nöthud.</p>
+            </div>
         </div>
     </div>
 </div>
