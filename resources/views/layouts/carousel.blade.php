@@ -5,24 +5,29 @@
         <li data-target="#myCarousel" data-slide-to="1"></li>
         <li data-target="#myCarousel" data-slide-to="2"></li>
         <li data-target="#myCarousel" data-slide-to="3"></li>
+        <li data-target="#myCarousel" data-slide-to="4"></li>
+
 
     </ol>
 
     <!-- Wrapper for slides -->
     <div class="carousel-inner" role="listbox">
         <div class="item active">
-            <img src="img/carousel/ÄLGDRÄKTER.jpg" style="width:100%; height: auto" alt="Verktyg">
+            <img src="img/carousel/snurr1.jpg" style="width:100%; height: auto" alt="Verktyg">
         </div>
 
         <div class="item">
-            <img src="img/carousel/Helsingen hem.jpg" style="width:100%; height: auto" alt="Skulpturer">
+            <img src="img/carousel/snurr2.jpg" style="width:100%; height: auto" alt="Skulpturer">
         </div>
         <div class="item">
-            <img src="img/carousel/Indianbild.jpg" style="width:100%; height: auto" alt="Verktyg">
+            <img src="img/carousel/snurr3.jpg" style="width:100%; height: auto" alt="Verktyg">
         </div>
 
         <div class="item">
-            <img src="img/carousel/Nöthudsväska.jpg" style="width:100%; height: auto" alt="Skulpturer">
+            <img src="img/carousel/snurr4.jpg" style="width:100%; height: auto" alt="Skulpturer">
+        </div>
+        <div class="item">
+            <img src="img/carousel/snurr5.jpg" style="width:100%; height: auto" alt="Skulpturer">
         </div>
 
     </div>

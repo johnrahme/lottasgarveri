@@ -4,6 +4,7 @@
 
         {{--@include('drafts.exhibitions')--}}
         {!! $page['content'] !!}
+    <br>
         <a href="{{route('list','se')}}" class = "btn btn-default"> Visa tidigare utsällningar och utmärkelser </a>
 
     @if(Auth::check())

@@ -10,7 +10,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#"><img class = "img-responsive" style="height: 130%;" src="{{asset('/img/logo.jpg')}}"></a>
+            <a class="navbar-brand" href="#"><img class = "img-responsive" style="height: 140%;" src="{{asset('/img/logo.png')}}"></a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav navbar-left">

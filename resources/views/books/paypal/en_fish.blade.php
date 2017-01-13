@@ -8,6 +8,6 @@
                 </select> </td></tr>
         </tbody></table>
     <input name="currency_code" value="SEK" type="hidden">
-    <input src="btn_buynowCC_LG.gif" name="submit" alt="PayPal - The safer, easier way to pay online!" type="image" border="0">
+    <input src="http://www.nittel.co.uk/images/paynow.png" style="width: 40%; height: auto" name="submit" alt="PayPal - The safer, easier way to pay online!" type="image" border="0">
     <img alt="" src="pixel.gif" border="0" height="1" width="1">
 </form>

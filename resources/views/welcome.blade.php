@@ -13,13 +13,20 @@
         //var body = $('body');
         var body = $('#storeBG');
         //body.attr('background','{{ asset('img/background.jpg') }}');
-        body.css('background-image', 'url({{ asset('img/bg2.jpg') }})');
+        body.css('background-image', 'url({{ asset('img/bakgrund_affarx.jpg') }})');
         body.css('background-repeat','no-repeat');
         body.css('background-size','100% 100%');
         body.css('background-attachment','fixed');
         var course = $('#courseBG');
         //body.attr('background','{{ asset('img/background.jpg') }}');
         course.css('background-image', 'url({{ asset('img/bg3.jpg') }})');
+        course.css('background-repeat','no-repeat');
+        course.css('background-size','100% 100%');
+        course.css('background-attachment','fixed');
+
+        var course = $('#exhibBG');
+        //body.attr('background','{{ asset('img/background.jpg') }}');
+        course.css('background-image', 'url({{ asset('img/bgUtsallningar.jpg') }})');
         course.css('background-repeat','no-repeat');
         course.css('background-size','100% 100%');
         course.css('background-attachment','fixed');

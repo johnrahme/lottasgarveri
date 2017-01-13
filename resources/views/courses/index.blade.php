@@ -57,5 +57,6 @@
         @endforeach
 
         <br>
+        {{ Html::linkRoute('course.create', 'Lägg till Kurs','', array('class' => 'btn btn-success')) }}
 
 @endsection
