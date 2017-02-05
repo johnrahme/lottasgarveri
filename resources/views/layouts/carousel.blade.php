@@ -14,6 +14,10 @@
     <div class="carousel-inner" role="listbox">
         <div class="item active">
             <img src="img/carousel/snurr1.jpg" style="width:100%; height: auto" alt="Verktyg">
+            <div class="carousel-caption">
+                <h2 style = "color: black">Lottas Garfveri AB</h2>
+
+            </div>
         </div>
 
         <div class="item">

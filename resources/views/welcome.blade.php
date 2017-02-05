@@ -2,8 +2,8 @@
 @section('content')
     {{--@include('layouts.carousel')--}}
     @include('layouts.carousel')
-{{--    @include('drafts.welcome')--}}
-    {!! $page['content'] !!}
+    @include('drafts.welcome')
+    {{--{!! $page['content'] !!}--}}
     @if(Auth::check())
         {{ Html::linkRoute('welcome.edit', 'Ändra innehåll', App::getLocale(),array('class' => 'btn btn-primary')) }}
     @endif
