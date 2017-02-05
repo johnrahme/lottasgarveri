@@ -64,7 +64,7 @@ return [
             'prefix' => '',
             'strict' => true,
             'engine' => null,
-        ]
+        ]/*
 
 //        'mysql' => [
 //            'driver' => 'mysql',
