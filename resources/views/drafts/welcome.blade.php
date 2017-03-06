@@ -4,11 +4,19 @@
 
         </div>
         <div class = "col-md-4" style = "padding-top: 100px;padding-bottom: 100px;">
-            <h1 align="center" style="color: white">Välkommen in i butiken!</h1>
-            <p align = "center" style = "color:white">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+            <h1 align="center" style="color: white">Välkommen in i min ateljé och butik.</h1>
+            <h4 align = "center" style = "color:white">Här säljer jag:
+
+                Produkter tillverkade av de skinn jag garvar.
+
+                Mina böcker om traditionella garvningsmetoder.
+
+                Stickade mössor, sjalar och vantar.
+
+                Hantverk i trä, keramik, ull, brons, silver.
                 <br>
-                <button align = "center" class = "btn btn-default">Läs mer</button>
-            </p>
+                <a href = "{{route('shop',App::getLocale())}}" class = "btn btn-default">Läs mer</a>
+            </h4>
 
         </div>
         <div class = "col-md-4">
@@ -22,11 +30,12 @@
 
         </div>
         <div class = "col-md-4" style = "padding-top: 30px;padding-bottom: 30px;">
-            <h1 align="center" style="color: black">Mitt Garfveri</h1>
-            <p align = "center" style = "color:black">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-                <br>
-                <a href = "/" class ="btn btn-default">Läs mer</a>
-            </p>
+            <h1 align="center" style="color: black">Garfveri</h1>
+            <h4 align = "center" style = "color:black">  Jag garvar mina skinn med bark som jag samlar på våren
+
+                när träden savar eller med omättade fetter.  <br>
+                <a href = "{{route('tannery',App::getLocale())}}" class = "btn btn-default">Läs mer</a>
+            </h4>
 
         </div>
         <div class = "col-md-4">
@@ -40,11 +49,16 @@
 
         </div>
         <div class = "col-md-4" style = "padding-top: 100px;padding-bottom: 100px;">
-            <h1 align="center" style="color: white">Gå på kurs</h1>
-            <p align = "center" style = "color:white">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-                <br>
-                <button align = "center" class = "btn btn-default">Läs mer</button>
-            </p>
+            <h1 align="center" style="color: white">Gå på kurs!</h1>
+            <h4 align = "center" style = "color:white">Du som är intresserad av hantverk och känner att det
+
+                skulle vara roligt att lära dig mer om skinnberedning och
+
+                garvning med traditionella metoder har här en möjlighet att
+
+                gå på en kurs eller en föreläsning.<br>
+                <a href = "{{route('courses',App::getLocale())}}" class = "btn btn-default">Läs mer</a>
+            </h4>
 
         </div>
         <div class = "col-md-4">
@@ -58,11 +72,14 @@
 
         </div>
         <div class = "col-md-4" style = "padding-top: 30px;padding-bottom: 30px;">
-            <h1 align="center" style="color: black">Mina böcker</h1>
-            <p align = "center" style = "color:black">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-                <br>
-                <button align = "center" class = "btn btn-default">Läs mer</button>
-            </p>
+            <h1 align="center" style="color: black">Garvningsböcker</h1>
+            <h4 align = "center" style = "color:black">Skinngarvning och beredning med traditionella
+
+                metoder. ISBN 978-91- 637-1685- 0 <br> <br> 
+
+                Fiskskinn garvning och sömnad. ISBN 978-91- 637-1660- 7<br>
+                <a href = "{{route('books',App::getLocale())}}" class = "btn btn-default">Läs mer</a>
+            </h4>
 
         </div>
         <div class = "col-md-4">
@@ -76,11 +93,16 @@
 
         </div>
         <div class = "col-md-4" style = "padding-top: 100px;padding-bottom: 100px;">
-            <h1 align="center" style="color: white">Mina utställningar</h1>
-            <p align = "center" style = "color:white">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-                <br>
-                <button align = "center" class = "btn btn-default">Läs mer</button>
-            </p>
+            <h1 align="center" style="color: white">Utställningar
+
+            </h1>
+            <h4 align = "center" style = "color:white">Utställningar
+
+                och uppdrag till
+
+                museer.<br>
+                <a href = "{{route('exhibitions',App::getLocale())}}" class = "btn btn-default">Läs mer</a>
+            </h4>
 
         </div>
         <div class = "col-md-4">

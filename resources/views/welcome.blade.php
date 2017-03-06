@@ -2,7 +2,11 @@
 @section('content')
     {{--@include('layouts.carousel')--}}
     @include('layouts.carousel')
-    @include('drafts.welcome')
+    @if(App::isLocale('se'))
+        @include('drafts.welcome')
+    @else
+        @include('drafts.welcome_en')
+    @endif
     {{--{!! $page['content'] !!}--}}
     @if(Auth::check())
         {{ Html::linkRoute('welcome.edit', 'Ändra innehåll', App::getLocale(),array('class' => 'btn btn-primary')) }}
@@ -15,20 +19,20 @@
         //body.attr('background','{{ asset('img/background.jpg') }}');
         body.css('background-image', 'url({{ asset('img/bakgrund_affarx.jpg') }})');
         body.css('background-repeat','no-repeat');
-        body.css('background-size','100% 100%');
+        body.css('background-size','auto 100%');
         body.css('background-attachment','fixed');
         var course = $('#courseBG');
         //body.attr('background','{{ asset('img/background.jpg') }}');
         course.css('background-image', 'url({{ asset('img/bg3.jpg') }})');
         course.css('background-repeat','no-repeat');
-        course.css('background-size','100% 100%');
+        course.css('background-size','auto 100%');
         course.css('background-attachment','fixed');
 
         var course = $('#exhibBG');
         //body.attr('background','{{ asset('img/background.jpg') }}');
         course.css('background-image', 'url({{ asset('img/bgUtsallningar.jpg') }})');
         course.css('background-repeat','no-repeat');
-        course.css('background-size','100% 100%');
+        course.css('background-size','auto 100%');
         course.css('background-attachment','fixed');
     </script>
 @endsection

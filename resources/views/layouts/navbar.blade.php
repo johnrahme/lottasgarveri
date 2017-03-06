@@ -18,10 +18,11 @@
                 <li id = "shop"><a href="{{route('shop',App::getLocale())}}">@lang('menu.shop')</a></li>
                 <li id = "tannery"><a href="{{route('tannery',App::getLocale())}}">@lang('menu.tannery')</a></li>
                 <li id = "courses"><a href="{{route('courses',App::getLocale())}}">@lang('menu.coursesLectures')</a></li>
+
+                <li id = "books"><a href="{{route('books',App::getLocale())}}">@lang('menu.books')</a></li>
                 <li id = "exhibitions"><a href="{{route('exhibitions',App::getLocale())}}">@lang('menu.exhibitions')</a>
 
                 </li>
-                <li id = "books"><a href="{{route('books',App::getLocale())}}">@lang('menu.books')</a></li>
 
 
             @if(App::isLocale('se'))

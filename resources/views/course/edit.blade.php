@@ -25,8 +25,13 @@
                 </div>
 
                 <div class="form-group">
-                    <label for="pdf">File input</label>
+                    <label for="pdf">PDF Svenska</label>
                     <input type="file" id="pdf" name = "pdf">
+                    <p class="help-block">Ladda upp informations pdf här</p>
+                </div>
+                <div class="form-group">
+                    <label for="pdf_en">PDF Engelska</label>
+                    <input type="file" id="pdf_en" name = "pdf_en">
                     <p class="help-block">Ladda upp informations pdf här</p>
                 </div>
 

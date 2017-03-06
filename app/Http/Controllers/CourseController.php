@@ -71,6 +71,19 @@ class CourseController extends Controller
         else{
             $course->pdf_url = 'not set';
         }
+
+        if ($request->hasFile('pdf_en') && $request->file('pdf_en')->isValid()){
+            $imgName = $request->file('pdf_en')->getClientOriginalName();
+            //$imgExtension = Input::file('image')->getClientOriginalExtension();
+            $saveName = microtime() . '_' . $imgName;
+            $folder = 'pdf_en';
+            $request->file('pdf_en')->move($folder, $saveName);
+            $URL = url('/') . "/" . $folder . "/" . $saveName;
+            $course->pdf_url_en = $URL;
+        }
+        else{
+            $course->pdf_url_en = 'not set';
+        }
         $course->save();
 
         return redirect('/se');
@@ -103,6 +116,17 @@ class CourseController extends Controller
             $URL = url('/') . "/" . $folder . "/" . $saveName;
             $course->pdf_url = $URL;
         }
+
+        if ($request->hasFile('pdf_en') && $request->file('pdf_en')->isValid()){
+            $imgName = $request->file('pdf_en')->getClientOriginalName();
+            //$imgExtension = Input::file('image')->getClientOriginalExtension();
+            $saveName = microtime() . '_' . $imgName;
+            $folder = 'pdf_en';
+            $request->file('pdf_en')->move($folder, $saveName);
+            $URL = url('/') . "/" . $folder . "/" . $saveName;
+            $course->pdf_url_en = $URL;
+        }
+
         $course->save();
 
         return redirect('/se');

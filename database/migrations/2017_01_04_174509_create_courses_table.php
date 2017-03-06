@@ -23,6 +23,7 @@ class CreateCoursesTable extends Migration
             $table->string('start_time');
             $table->string('end_time');
             $table->string('pdf_url');
+            $table->string('pdf_url_en');
             $table->boolean('online');
             $table->timestamps();
         });

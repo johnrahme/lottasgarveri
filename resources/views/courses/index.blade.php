@@ -13,15 +13,15 @@
             <div class="panel panel-default">
                 <div class="panel-body" style="padding-top: 0">
                     <div class="page-header" style="margin-top:0px">
-                        <h3>@if(App::isLocale('se')){{$course->name}} @else {{$course->en_name}} @endif<small>{{$course->start_time}}</small></h3>
+                        <h3>@if(App::isLocale('se')){{$course->name}} @else {{$course->en_name}} @endif</h3>
 
                     </div>
                     @if(App::isLocale('se')){!!$course->content!!} @else {!!$course->en_content!!} @endif
 
-                    <p aria-label="Left Align">
-                        <span class="glyphicon glyphicon-time" style="font-size: 1.8em"></span>
-                        {{$course->start_time}} - {{$course->end_time}}
-                    </p>
+                    {{--<p aria-label="Left Align">--}}
+                        {{--<span class="glyphicon glyphicon-time" style="font-size: 1.8em"></span>--}}
+                        {{--{{$course->start_time}} - {{$course->end_time}}--}}
+                    {{--</p>--}}
 
                     <p>
                         <span class="glyphicon glyphicon-map-marker" style="font-size: 1.8em"></span>
@@ -30,7 +30,7 @@
 
                     <p>
                         <span class="glyphicon glyphicon-info-sign" style="font-size: 1.8em"></span>
-                        <a href="{{asset($course->pdf_url)}}" download>PDF</a>
+                        <a href="@if(App::isLocale('se')) {{asset($course->pdf_url)}} @else {{asset($course->pdf_url_en)}} @endif" download>PDF</a>
                     </p>
 
 

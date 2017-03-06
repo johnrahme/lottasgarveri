@@ -12,9 +12,11 @@
             <div class = "row">
                 <div class = "col-md-3">
                     <img class = "img-responsive center-block" src = "{{asset('/img/Books/Fiskbok x.jpg')}}">
-                    @include('books.paypal.se_skin')
+                        <div align="center">
+                            @include('books.paypal.se_skin')
+                        </div>
                 </div>
-                <div class = "col-md-6">
+                <div class = "col-md-6" style="padding-left: 30px; padding-right: 30px;">
                     <div class = "row">
                         <div class = "col-xs-6">
                             <img class = "img-responsive center-block" src = "{{asset('/img/Books/Fiskbok x.jpg')}}">
@@ -23,12 +25,16 @@
                             <img class = "img-responsive center-block" src = "{{asset('/img/Books/Framsida garvbok 2014.jpg')}}">
                         </div>
                     </div>
+                    <div align="center">
+                        @include('books.paypal.se_pack')
+                    </div>
 
-                    @include('books.paypal.se_pack')
                  </div>
                 <div class = "col-md-3">
                     <img class = "img-responsive center-block" src = "{{asset('/img/Books/Framsida garvbok 2014.jpg')}}">
+                    <div align="center">
                     @include('books.paypal.se_fish')
+                        </div>
                 </div>
             </div>
         </div>
@@ -37,9 +43,11 @@
             <div class = "row">
                 <div class = "col-md-3">
                     <img class = "img-responsive center-block" src = "{{asset('/img/Books/Framsida eng x.jpg')}}">
+                    <div align="center">
                     @include('books.paypal.en_skin')
+                        </div>
                 </div>
-                <div class = "col-md-6">
+                <div class = "col-md-6" style="padding-left: 30px; padding-right: 30px;">
                     <div class = "row">
                         <div class = "col-xs-6">
                             <img class = "img-responsive center-block" src = "{{asset('/img/Books/Framsida eng x.jpg')}}">
@@ -48,13 +56,17 @@
                             <img class = "img-responsive center-block" src = "{{asset('/img/Books/Fish x.jpg')}}">
                         </div>
                     </div>
-
+                    <div align="center">
                         @include('books.paypal.en_pack')
+
+                        </div>
 
                 </div>
                 <div class = "col-md-3">
                     <img class = "img-responsive center-block" src = "{{asset('/img/Books/Fish x.jpg')}}">
+                    <div align="center">
                     @include('books.paypal.en_fish')
+                        </div>
                 </div>
             </div>
         </div>
