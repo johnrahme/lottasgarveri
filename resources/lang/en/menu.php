@@ -2,7 +2,7 @@
 return [
     'tannery' => 'Tannery',
     'welcome' => 'Home',
-    'coursesLectures' => 'Courses & Lectures',
+    'coursesLectures' => 'Lectures & Courses',
     'shop' => 'Studio & Shop',
     'exhibitions' => 'Exhibitions & Museums',
     'books' => 'Books',

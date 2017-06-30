@@ -11,7 +11,7 @@
         <div role="tabpanel" class="tab-pane active" id="swedish" >
             <div class = "row">
                 <div class = "col-md-3">
-                    <img class = "img-responsive center-block" src = "{{asset('/img/Books/Fiskbok x.jpg')}}">
+                    <img class = "img-responsive center-block" src = "{{asset('/img/Books/Framsida garvbok 2014.jpg')}}">
                         <div align="center">
                             @include('books.paypal.se_skin')
                         </div>
@@ -19,10 +19,10 @@
                 <div class = "col-md-6" style="padding-left: 30px; padding-right: 30px;">
                     <div class = "row">
                         <div class = "col-xs-6">
-                            <img class = "img-responsive center-block" src = "{{asset('/img/Books/Fiskbok x.jpg')}}">
+                            <img class = "img-responsive center-block" src = "{{asset('/img/Books/Framsida garvbok 2014.jpg')}}">
                         </div>
                         <div class = "col-xs-6">
-                            <img class = "img-responsive center-block" src = "{{asset('/img/Books/Framsida garvbok 2014.jpg')}}">
+                            <img class = "img-responsive center-block" src = "{{asset('/img/Books/Fiskbok x.jpg')}}">
                         </div>
                     </div>
                     <div align="center">
@@ -31,7 +31,7 @@
 
                  </div>
                 <div class = "col-md-3">
-                    <img class = "img-responsive center-block" src = "{{asset('/img/Books/Framsida garvbok 2014.jpg')}}">
+                    <img class = "img-responsive center-block" src = "{{asset('/img/Books/Fiskbok x.jpg')}}">
                     <div align="center">
                     @include('books.paypal.se_fish')
                         </div>

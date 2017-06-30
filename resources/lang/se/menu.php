@@ -2,8 +2,8 @@
 return [
     'welcome' => 'Hem',
     'tannery' => 'Garveri',
-    'coursesLectures' => 'Kurser & Föreläsningar',
+    'coursesLectures' => 'Föreläsningar & Kurser',
     'shop' => 'Ateljé & Butik',
-    'exhibitions' => 'Utställningar & Muséer',
+    'exhibitions' => 'Utställningar & Museer',
     'books' => 'Böcker'
 ];

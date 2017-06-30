@@ -31,7 +31,7 @@
         <div class = "col-md-4">
 
         </div>
-        <div class = "col-md-4" style = "padding-top: 30px;padding-bottom: 30px;">
+        <div class = "col-md-4" style = "padding-top: 10px;padding-bottom: 10px;">
             <h1 align="center" style="color: black">Tannery</h1>
             <h4 align = "center" style = "color:black">  I tan my hides with bark that I collect in the spring when
 
@@ -73,8 +73,8 @@
         <div class = "col-md-4">
 
         </div>
-        <div class = "col-md-4" style = "padding-top: 30px;padding-bottom: 30px;">
-            <h1 align="center" style="color: black">Garvningsböcker</h1>
+        <div class = "col-md-4" style = "padding-top: 10px;padding-bottom: 10px;">
+            <h1 align="center" style="color: black">Tanning books</h1>
             <h4 align = "center" style = "color:black">Traditional tanning, Leather and Furskin.
 
                 ISBN 978-91- 637-1847- 2

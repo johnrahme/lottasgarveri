@@ -29,7 +29,7 @@
         <div class = "col-md-4">
 
         </div>
-        <div class = "col-md-4" style = "padding-top: 30px;padding-bottom: 30px;">
+        <div class = "col-md-4" style = "padding-top: 10px;padding-bottom: 10px;">
             <h1 align="center" style="color: black">Garfveri</h1>
             <h4 align = "center" style = "color:black">  Jag garvar mina skinn med bark som jag samlar på våren
 
@@ -71,7 +71,7 @@
         <div class = "col-md-4">
 
         </div>
-        <div class = "col-md-4" style = "padding-top: 30px;padding-bottom: 30px;">
+        <div class = "col-md-4" style = "padding-top: 10px;padding-bottom: 10px;">
             <h1 align="center" style="color: black">Garvningsböcker</h1>
             <h4 align = "center" style = "color:black">Skinngarvning och beredning med traditionella
 
