@@ -1,4 +1,12 @@
 
+<style>
+    .nav a{
+        font-size: 0.9em !important;
+    }
+    /*.nav li{*/
+        /*padding-right:5px;*/
+    /*}*/
+</style>
 
 <!-- Static navbar -->
 <nav class="navbar navbar-default navbar-fixed-top" style = "border: 0px; background: rgba(255, 255, 255, 0.9);">

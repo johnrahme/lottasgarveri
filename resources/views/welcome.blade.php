@@ -5,7 +5,8 @@
     @if(App::isLocale('se'))
         @include('drafts.welcome')
     @else
-        @include('drafts.welcome_en')
+        @include('drafts.welcome_en
+        ')
     @endif
     {{--{!! $page['content'] !!}--}}
     @if(Auth::check())
@@ -19,21 +20,24 @@
         //body.attr('background','{{ asset('img/background.jpg') }}');
         body.css('background-image', 'url({{ asset('img/bakgrund_affarx.jpg') }})');
         body.css('background-repeat','no-repeat');
-        body.css('background-size','auto 100%');
-        body.css('background-attachment','fixed');
+        body.css('background-size','auto 240%');
+        body.css('background-position','center');
+        //body.css('background-attachment','fixed');
         var course = $('#courseBG');
         //body.attr('background','{{ asset('img/background.jpg') }}');
         course.css('background-image', 'url({{ asset('img/bg3.jpg') }})');
         course.css('background-repeat','no-repeat');
-        course.css('background-size','auto 100%');
-        course.css('background-attachment','fixed');
+        course.css('background-size','auto 240%');
+        course.css('background-position','center');
+        //course.css('background-attachment','fixed');
 
         var course = $('#exhibBG');
         //body.attr('background','{{ asset('img/background.jpg') }}');
-        course.css('background-image', 'url({{ asset('img/bgUtsallningar.jpg') }})');
+        course.css('background-image', 'url({{ asset('img/bgUtsallningar_old_old.jpg') }})');
         course.css('background-repeat','no-repeat');
-        course.css('background-size','auto 100%');
-        course.css('background-attachment','fixed');
+        course.css('background-size','auto 270%');
+        course.css('background-position','center');
+        //course.css('background-attachment','fixed');
     </script>
 @endsection
 {{--@section('content')--}}
