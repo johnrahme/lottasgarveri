@@ -3,7 +3,7 @@
         <div class = "col-md-4">
 
         </div>
-        <div class = "col-md-4" style = "padding-top: 100px;padding-bottom: 100px;">
+        <div class = "col-md-4" style = "padding-top: 60;padding-bottom: 60px;">
             <h1 align="center" style="color: white">Welcome to my
 
                 studio and shop</h1>
@@ -36,6 +36,8 @@
             <h4 align = "center" style = "color:black">  I tan my hides with bark that I collect in the spring when
 
                 the sap is rising or with unsaturated oils. <br>
+				<img class = "" style="height: auto; width: 240px;" src = "{{asset('/img/mastare_logo.jpg')}}">
+				<br>
                 <a href = "{{route('tannery',App::getLocale())}}" class = "btn btn-default">Read more</a>
             </h4>
 

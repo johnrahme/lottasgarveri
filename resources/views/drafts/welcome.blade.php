@@ -3,7 +3,7 @@
         <div class = "col-md-4">
 
         </div>
-        <div class = "col-md-4" style = "padding-top: 100px;padding-bottom: 100px;">
+        <div class = "col-md-4" style = "padding-top: 60px;padding-bottom: 60px;">
             <h1 align="center" style="color: white">Välkommen in i min ateljé och butik.</h1>
             <h4 align = "center" style = "color:white">Här säljer jag:
 
@@ -34,6 +34,8 @@
             <h4 align = "center" style = "color:black">  Jag garvar mina skinn med bark som jag samlar på våren
 
                 när träden savar eller med omättade fetter.  <br>
+				<img class = "" style="height: auto; width: 240px;" src = "{{asset('/img/mastare_logo.jpg')}}">
+				<br>
                 <a href = "{{route('tannery',App::getLocale())}}" class = "btn btn-default">Läs mer</a>
             </h4>
 
