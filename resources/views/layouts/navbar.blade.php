@@ -29,7 +29,7 @@
 
                 <li id = "books"><a href="{{route('books',App::getLocale())}}">@lang('menu.books')</a></li>
                 <li id = "exhibitions"><a href="{{route('exhibitions',App::getLocale())}}">@lang('menu.exhibitions')</a>
-
+                <li id = "masterclass"><a href="{{route('masterclass',App::getLocale())}}">@lang('menu.masterclass')</a> 
                 </li>
 
 

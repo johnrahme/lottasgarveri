@@ -1,13 +1,13 @@
 <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-    <input name="cmd" value="_s-xclick" type="hidden">
-    <input name="hosted_button_id" value="WEZYSP4KHC4KU" type="hidden">
-    <table>
-        <tbody><tr><td><input name="on0" value="Fish Leather Tanning book including shipping:" type="hidden">Fish Leather Tanning book including shipping:</td></tr><tr><td><select name="os0">
-                    <option value="Outside Sweden">Outside Sweden 350,00 SEK</option>
-                    <option value="In Sweden">In Sweden 310,00 SEK</option>
-                </select> </td></tr>
-        </tbody></table>
-    <input name="currency_code" value="SEK" type="hidden">
-    <input src="http://www.nittel.co.uk/images/paynow.png" style="width: 40%; height: auto" name="submit" alt="PayPal - The safer, easier way to pay online!" type="image" border="0">
-    <img alt="" src="pixel.gif" border="0" height="1" width="1">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="WEZYSP4KHC4KU">
+<table>
+<tr><td><input type="hidden" name="on0" value="Fish Leather Tanning book including shipping:">Fish Leather Tanning book including shipping:</td></tr><tr><td><select name="os0">
+	<option value="Outside Sweden">Outside Sweden 350,00 SEK</option>
+	<option value="In Sweden">In Sweden 310,00 SEK</option>
+</select> </td></tr>
+</table>
+<input type="hidden" name="currency_code" value="SEK">
+<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+<img alt="" border="0" src="https://www.paypalobjects.com/sv_SE/i/scr/pixel.gif" width="1" height="1">
 </form>

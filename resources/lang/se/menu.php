@@ -5,5 +5,6 @@ return [
     'coursesLectures' => 'Föreläsningar & Kurser',
     'shop' => 'Ateljé & Butik',
     'exhibitions' => 'Utställningar & Museer',
-    'books' => 'Böcker'
+    'books' => 'Böcker',
+    'masterclass' => 'Masterclass'
 ];

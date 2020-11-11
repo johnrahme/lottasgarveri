@@ -6,5 +6,6 @@ return [
     'shop' => 'Studio & Shop',
     'exhibitions' => 'Exhibitions & Museums',
     'books' => 'Books',
-    'edit' => 'Edit'
+    'edit' => 'Edit',
+    'masterclass' => 'Masterclass'
 ];

@@ -63,11 +63,17 @@ Route::post('/{lang}/books/update', 'BooksController@update')->name('books.updat
 
 //Course
 
-Route::get('/se/course/create', 'CourseController@create')->name('course.create');
-Route::post('/se/course/store', 'CourseController@store')->name('course.store');
-Route::post('/se/course/update', 'CourseController@update')->name('course.update');
-Route::get('/se/course/{id}/edit', 'CourseController@edit')->name('course.edit');
-Route::delete('/se/course/{id}/delete', 'CourseController@delete')->name('course.delete');
+Route::get('/se/course/create', 'CourseController@create')->name('course.create')->middleware('auth');
+Route::post('/se/course/store', 'CourseController@store')->name('course.store')->middleware('auth');
+Route::post('/se/course/update', 'CourseController@update')->name('course.update')->middleware('auth');
+Route::get('/se/course/{id}/edit', 'CourseController@edit')->name('course.edit')->middleware('auth');
+Route::delete('/se/course/{id}/delete', 'CourseController@delete')->name('course.delete')->middleware('auth');
+
+//masaterclass
+Route::get('/{lang}/masterclass', 'MasterclassController@index')->name('masterclass');
+Route::get('/{lang}/masterclass/edit', 'MasterclassController@edit')->name('masterclass.edit')->middleware('auth');
+Route::post('/{lang}/masterclass/update', 'MasterclassController@update')->name('masterclass.update')->middleware('auth');
+Route::get('/{lang}/masterclass/payment_success', 'MasterclassController@payment_success')->name('masterclass.payment_success');
 
 
 
